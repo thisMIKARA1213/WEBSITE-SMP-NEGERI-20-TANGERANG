@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMP Negeri 20 Tangerang</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+  background: radial-gradient(circle at top, #0b122e, #030617);
+  color: #ffffff;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, strong, span {
+  color: #ffffff !important;
+}
+
+header {
+  background: linear-gradient(135deg, #050a1f, #0a1233);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav button {
+  background: linear-gradient(135deg, #6f7cff, #8f9bff);
+  color: #0a1233;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  padding: 50px 60px;
+}
+
+.page {
+  display: none;
+  animation: fade 0.5s ease-in-out;
+}
+
+.page.active {
+  display: block;
+}
+
+.hero {
+  background: linear-gradient(160deg, rgba(15, 25, 60, 0.95), rgba(5, 10, 40, 0.95));
+  color: white;
+  padding: 80px 50px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  box-shadow: inset 0 0 40px rgba(255,255,255,0.05), 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.card {
+  background: linear-gradient(160deg, #0e173a, #070c25);
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  color: #8f9bff;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+p {
+  color: #c7ccff;
+  line-height: 1.7;
+}
+
+.section-title{
+  font-size:24px;
+  margin:40px 0 20px;
+  font-weight:600;
+}
+
+/* GALLERY */
+    .section-title{
+      font-size:24px;
+      margin:40px 60px 20px;
+      font-weight:600;
+    }
+    .gallery{
+      padding:0 60px 60px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+    .gallery img{
+      width:100%;
+      border-radius:18px;
+      transition:.4s;
+    }
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+
+    /* RATA TENGAH VISI MISI */
+    #visiMisi {
+      text-align: center;
+    }
+
+    #visiMisi ul {
+      text-align: center;
+      list-style-position: inside;
+
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #050a1f;
+  color: #9aa5ff;
+  margin-top: 50px;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(15px);} 
+  to { opacity: 1; transform: translateY(0);} 
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SMP Negeri 20 Tangerang</h1>
+  <nav>
+    <button onclick="showPage('beranda')">Beranda</button>
+    <button onclick="showPage('visiMisi')">Visi & Misi</button>
+    <button onclick="showPage('sejarah')">Sejarah</button>
+    <button onclick="showPage('prestasi')">Prestasi</button>
+    <button onclick="showPage('guru')">Profil Guru</button>
+
+
+  </nav>
+</header>
+
+<div class="container">
+<!-- BERANDA -->
+<section id="beranda" class="page active">
+  <section class="hero">
+    <img src="C:\Users\MM-05\Downloads/SMPE.jpg">
+    <h2>Selamat Datang di Website SMPN 20 Tangerang</h2>
+    <p>Pusat informasi resmi sekolah yang berisi profil, prestasi, kegiatan, dan layanan sekolah.</p>
+  </section>
+
+  <div class="card">
+    <h3>Profil Singkat Sekolah</h3>
+    <p>
+      SMP Negeri 20 Kota Tangerang merupakan salah satu institusi pendidikan menengah pertama yang berkomitmen dalam mencetak generasi muda yang cerdas, berkarakter, dan berdaya saing. Sekolah ini hadir sebagai ruang pembelajaran yang tidak hanya fokus pada prestasi akademik, tetapi juga pada pengembangan potensi, kreativitas, dan sikap disiplin siswa.
+
+Dengan lingkungan yang nyaman, aman, dan kondusif, SMPN 20 Kota Tangerang didukung oleh tenaga pendidik profesional serta fasilitas yang memadai untuk menunjang proses belajar mengajar. Berbagai program unggulan dan kegiatan ekstrakurikuler turut menjadi wadah bagi siswa untuk mengasah bakat di bidang seni, olahraga, kepemimpinan, dan teknologi.
+
+SMPN 20 Kota Tangerang menjunjung tinggi nilai-nilai kedisiplinan, tanggung jawab, serta semangat kebersamaan dalam menciptakan suasana sekolah yang harmonis dan inspiratif. Melalui pembelajaran yang inovatif dan berorientasi pada karakter, sekolah ini terus berupaya mencetak lulusan yang berprestasi, berakhlak mulia, dan siap menghadapi tantangan masa depan.</p>
+
+</p>
+  </div>
+
+  <h3 class="section-title">Galeri Kegiatan Sekolah</h3>
+  <section class="gallery">
+    <img src="C:\Users\MM-05\Downloads/NGAJIK.jpg">
+    <img src="C:\Users\MM-05\Downloads/SENAM.jpg">
+    <img src="C:\Users\MM-05\Downloads/NYAPU.jpg">
+
+
+  </section>
+</section>
+
+<!-- VISI MISI -->
+<section id="visiMisi" class="page">
+  <section class="hero">
+    <h2>Visi & Misi Sekolah</h2>
+    <p>Pedoman dan arah tujuan pendidikan SMP Negeri 20 Tangerang</p>
+  </section>
+
+  <div class="card">
+      <h3>Visi</h3>
+      <p><strong>
+        TERWUJUDNYA LINGKUNGAN BELAJAR YANG DINAMIS DENGAN MEMBERDAYAKAN SUMBER DAYA DAN SUMBER DANA YANG ADA
+      </strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Misi</h3>
+      <h3><p><h3>
+        <li>Memberikan kesempatan memperoleh pendidikan SLTP yang bermutu bagi masyarakat.</li>
+        <li>Mengembangkan seluruh potensi siswa agar menjadi generasi mandiri dan pembelajar.</li>
+        <li>Meningkatkan kualitas proses belajar mengajar untuk membentuk siswa yang bertaqwa dan berilmu.</li>
+        <li>Meningkatkan profesionalisme sekolah dalam fungsi sosial dan budaya masyarakat.</li>
+        <li>Memberdayakan peran serta masyarakat berdasarkan prinsip kemandirian.</li>
+      </ul>
+    </div>
+  </section>
+
+
+<!-- SEJARAH -->
+<section id="sejarah" class="page">
+  <section class="hero">
+    <h2>Sejarah SMP Negeri 20 Tangerang</h2>
+    <p>Perjalanan dan perkembangan sekolah dari masa ke masa</p>
+  </section>
+
+  <div class="card">
+    <h3>Awal Berdiri</h3>
+    <p>
+      SMP Negeri 20 Tangerang didirikan sebagai upaya pemerintah dalam memperluas akses pendidikan berkualitas
+      bagi masyarakat Kota Tangerang. Sejak awal berdiri, sekolah ini telah menjadi tempat pembinaan generasi
+      muda yang tidak hanya unggul dalam akademik, tetapi juga memiliki karakter kuat dan disiplin tinggi.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Perkembangan Sekolah</h3>
+    <p>
+      Gedung baru SMP Negeri 20 Tangerang ini diresmikan penggunaannya oleh Walikota Tangerang, Drs, H. Wahidin Halim, pada tanggal 3 Desember 2003. Gedung baru ini langsung diisi dan digunakan oleh para siswa kelas 7 dan siswa kelas 8 pada Semester Genap Tahun Pelajaran 2003 - 2004, walaupun sebagian siswa harus rela menempati gedung bekas SD yang kondisinya kurang layak untuk ditempati. Hal ini dimungkinkan oleh semangat untuk mempunyai dan menempati gedung sendiri. SMP Negeri 20 Kota Tangerang adalah sekolah rintisan atas dorongan kebutuhan dan keinginan masyarakat sekitar Perumnas untuk bersekolah di sekolah negeri yang biayanya relatif lebih murah dari sekolah swasta.
+
+Berangkat dari kenyataan inilah dengan seijin Dinas Pendidikan dan Kebudayaan Kota Tangerang, Bapak Drs. H. Endi Suhardi, sebagai Kepala SMP Negeri 6 Kota Tangerang mengambil inisiatif untuk membuka Kelas jauh yang dalam kondisi sementara menempati Gedung Sekolah SMP Negeri 6 Kota Tangerang.Pada tahun kedua pembukaan Kelas jauh ini, ternyata animo masyarakat makin bertambah, terbukti dengan meningkatnya jumlah rombongan belajar dari 5 (lima) kelas menjadi 6 (enam) kelas. Dan dengan upaya yang tak kenal lelah dari seluruh personil SMP Negeri 6 Kota Tangerang, 11 (sebelas) rombongan belajar yang berjumlah 447 orang siswa kelas 7 dan kelas 8 diboyong ke Gedung Baru pada Semester Genap Tahun Pelajaran 2003-2004 sebagai murid SMP Negeri 20 Kota Tangerang.
+
+Pada Tahun Pelajaran 2004-2005, animo masyarakat lebih meningkat lagi setelah SMP Negeri 20 memperoleh tambahan gedung baru sebanyak 8 (delapan ) RKB. Jumlah pendaftar mencapai 9 kelas, 360 orang.
+
+Pada Tahun Pelajaran 2005-2006 pun demikian, dengan sistem GAT dan satu pilihan, animo masyarakat untuk menyekolahkan putra-putrinya tidak berkurang. Tidak kurang dari 600 orang pendaftar mengikuti GAT untuk merebut 360 kursi yang tersedia.
+
+Pada Tahun Pelajaran 2006-2007 pun demikian, dengan sistem GAT dan dua pilihan, animo masyarakat untuk menyekolahkan putra-putrinya tidak berkurang. Tidak kurang dari 1609 terdiri dari Pilihan 1 sebanyak 535 dan Pilihan 2 sebanyak 1074 orang pendaftar mengikuti GAT untuk merebut 280 kursi yang tersedia.
+
+Pada Tahun Pelajaran 2007-2008 pun demikian, dengan sistem GAT dan dua pilihan, animo masyarakat untuk menyekolahkan putra-putrinya tidak berkurang. Tidak kurang dari 387 orang pendaftar mengikuti GAT untuk merebut 280 kursi yang tersedia.
+
+Pada tahun ini, Tahun Pelajaran 2008-2009, menggunakan fasilitas internet dengan nama PSB Online dengan 3 pilihan. Hal ini pun tidak menyurutkan minat masyarakat untuk memilih SMP Negeri 20 Tangerang. Tidak kurang dari 481 pendaftar memperebutkan 320 tempat yang tersedia.
+
+Kondisi ini memang tidak terlepas dari lingkungannya SMP Negeri 20 Tangerang dilingkungan Perumnas
+</p>
+  </div>
+
+  <div class="card">
+    <h3>Komitmen Masa Kini</h3>
+    <p>
+      Hingga saat ini, SMPN 20 Tangerang tetap berkomitmen menghadirkan pendidikan yang inovatif, berkarakter,
+      dan relevan dengan perkembangan zaman, guna mencetak generasi unggul yang siap bersaing di masa depan.
+    </p>
+  </div>
+</section>
+
+<!-- PRESTASI -->
+<section id="prestasi" class="page">
+  <div class="hero">
+    <h2>Prestasi SMPN 20 Tangerang</h2>
+    <p>Berikut pencapaian akademik dan non-akademik yang membanggakan</p>
+  </div>
+
+  <div class="card">
+    <h3>🏆 Prestasi Sekolah</h3>
+    <ul>
+      <li><strong>LKBB EXTUTA FEST</strong></li>
+      <li><strong>Kanaya Fathuranni An Nazla</strong> - Juara Pra Remaja Putri Pencak Silat Championship 2025</li>
+      <li><strong>FTBI 2025</strong> - Juara 1 Tingkat Kota Tangerang (Membaca Aksara Sunda) - Kanaya Adwiyan</li>
+      <li><strong>Lomba Perisai Diri 2019</strong> - Juara 1 Tingkat Kota/Kabupaten</li>
+      <li><strong>Kejuaraan Nasional Pencak Silat 2019</strong> - Peringkat 2 Nasional</li>
+      <li><strong>KikoFCM Cup 2019</strong> - Peringkat 3 Kota/Kabupaten</li>
+      <li><strong>ISM Copa 2019</strong> - Peringkat 1 Kota/Kabupaten</li>
+      <li><strong>Festival HUT Kota Tangerang 2019</strong> - Peringkat 2 Nasional</li>
+    </ul>
+  </div>
+</section>
+
+<section id="guru" class="page">
+  <div class="hero">
+    <h2>Profil Guru</h2>
+    <p>Daftar tenaga pendidik SMPN 20 Tangerang</p>
+    <img src="C:\Users\MM-05\Downloads/DUPTA GURU.jpg">
+   </div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Budi Mulyadi</h4><p>Ketua - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Ali Usman</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Arif Junaedi</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Ayi Supyandi</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Dewi Nuryanti</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Fahmi Hafidatul Hidayati</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Kurnia Febriati</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Lisdawati</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Pariyah</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Rita Nur Afiah</h4><p>Anggota - Guru</p></div>
+    <div class="guru-card"><div class="guru-photo"></div><h4>Erlan Suherlan</h4><p>Anggota - Komite Sekolah</p></div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 SMP Negeri 20 Tangerang</p>
+</footer>
+
+<script>
+function showPage(pageId){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(pageId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
